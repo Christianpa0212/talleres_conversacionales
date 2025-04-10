@@ -6,10 +6,10 @@ const xss = require('xss-clean');
 const path = require('path');
 const hbs = require('hbs');
 
-const tallerRoutes = require('./routes/tallerRoutes');
+const tallerRoutes = require('./server/routes/tallerRoutes');
 
 // Importación de BD
-require('./config/db/db');
+require('./server/config/db/db');
 
 const app = express();
 
