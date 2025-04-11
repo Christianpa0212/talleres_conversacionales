@@ -15,10 +15,10 @@ const app = express();
 
 // Configuracion de vistas
 app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, '../client/views'));
+app.set('views', path.join(__dirname, 'client/views'));
 
 // Archivos estaticos
-app.use(express.static(path.join(__dirname, '../client/public')));
+app.use(express.static(path.join(__dirname, 'client/public')));
 
 // Middlewares de seguridad
 //app.use(xss());
